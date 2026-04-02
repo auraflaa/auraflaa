@@ -1,5 +1,14 @@
 # 💫 About Me:
-I am a second-year BTech CSE student at RV University, driven by a long-term vision of becoming a data scientist with strong foundations in AI, ML, and cloud computing. My academic and professional interests span data analysis, machine learning, open-source contributions, and scalable backend systems.<br><br>I maintain a rigorous learning path—combining university coursework, certifications, research exploration, and hands-on projects—to build a deep technical profile. My work often focuses on deriving insights from data, designing intelligent systems, and building tools that solve practical problems with measurable impact.<br><br> I approach technology with a skeptical mindset, questioning assumptions, evaluating trade-offs, and striving for solutions that are both elegant and reliable.<br><br>At present, I am working toward:<br><br>Advancing my skills in data analysis and machine learning<br><br>Building production-ready projects in Python, SQL, and cloud platforms<br><br>Laying the foundation for future research<br><br>If you find my work interesting or want to collaborate on data-centric or AI-driven projects, feel free to explore my repositories or reach out.
+BTech: CS @ RV University.
+
+Working on data, ML, and LLM systems.  
+Mostly building, occasionally breaking things.
+
+I believe in Research + Application.  
+Research without application is thought without action,  
+application without research is an action without direction.
+
+Trying to bridge both — turning ideas into systems, and systems into understanding.
 
 
 ## 🌐 Socials:
