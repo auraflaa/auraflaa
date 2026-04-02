@@ -94,7 +94,17 @@ Trying to bridge both — turning ideas into systems, and systems into understan
 
 ## 📊 GitHub Stats
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=auraflaa&theme=highcontrast&ring=ff9f1c&fire=ff9f1c&currStreakLabel=ff9f1c&sideLabels=ffffff&dates=aaaaaa)](https://git.io/streak-stats)
+### 🔥 Streak
+<p align="center">
+  <a href="https://git.io/streak-stats">
+    <img src="https://streak-stats.demolab.com?user=auraflaa&theme=highcontrast&ring=ff9f1c&fire=ff9f1c&currStreakLabel=ff9f1c&sideLabels=ffffff&dates=aaaaaa" />
+  </a>
+</p>
+
+### 📈 Overall Stats
+<p align="center">
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=auraflaa&show_icons=true&theme=dark&hide_border=true" />
+</p>
 
 ---
 
