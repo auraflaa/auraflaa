@@ -16,8 +16,6 @@
 
 # 💫 About Me
 
-# 💫 About Me
-
 BTech: CS @ RV University.  
 
 Working on data, ML, and LLM systems.  
