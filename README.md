@@ -16,17 +16,19 @@
 
 # 💫 About Me
 
-BTech CSE @ RV University  
+# 💫 About Me
 
-Building **data-driven systems, LLM pipelines, and applied ML solutions**.
+BTech: CS @ RV University.  
 
-I operate on a simple principle:  
-**Research → Systems → Iteration**
+Working on data, ML, and LLM systems.  
+Mostly `building`, occasionally breaking things.  
 
-- Research without systems is theory  
-- Systems without research is guesswork  
+I believe in **Research + Application**.  
+Research without *application* is thought without action,  
+application without *research* is action without direction.  
 
-My focus is on **bridging both into deployable intelligence systems**
+Trying to bridge both — turning ideas into systems,  
+and systems into understanding.
 
 ---
 
