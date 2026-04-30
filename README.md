@@ -32,22 +32,10 @@ and systems into understanding.
 
 ## 🎯 Current Focus
 
-- 🧠 NLP + LLM Systems (RAG, fine-tuning, evaluation)
-- ⚙️ Data-centric ML pipelines  
-- 📊 Applied Data Science (analysis → insight → system)
-- 🔬 Research with implementation bias  
-
----
-
-## 🧠 Systems Thinking (Core Direction)
-
-- Designing **end-to-end ML systems**
-- Building **retrieval + reasoning pipelines**
-- Working with:
-  - embeddings
-  - vector databases
-  - reranking systems
-  - evaluation loops
+-  NLP + LLM Systems (RAG, fine-tuning, evaluation)
+-  Data-centric ML pipelines  
+-  Applied Data Science (analysis → insight → system)
+-  Applied ML in Real World Scenarios 
 
 ---
 
