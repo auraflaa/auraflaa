@@ -14,59 +14,51 @@
   <img src="https://media.tenor.com/R_ND1Icyt7QAAAAi/chibi-anime-boy.gif" width="180"/>
 </p>
 
-# 💫 About Me
+# About Me
 
-BTech: CS @ RV University.  
+BTech Computer Science student at RV University.
 
-Working on data, ML, and LLM systems.  
-Mostly `building`, occasionally breaking things.  
+Interested in building intelligent systems that combine data, machine learning, and large language models to solve real-world problems.
 
-I believe in **Research + Application**.  
-Research without *application* is thought without action,  
-application without *research* is action without direction.  
+Currently focused on NLP, Retrieval-Augmented Generation (RAG), Machine Learning Systems, and Applied Data Science.
 
-Trying to bridge both — turning ideas into systems,  
-and systems into understanding.
+My approach is simple: understand the theory deeply, validate it experimentally, and engineer solutions that can operate in production environments.
 
 ---
 
-## 🎯 Current Focus
+## Current Focus
 
--  NLP + LLM Systems (RAG, fine-tuning, evaluation)
--  Data-centric ML pipelines  
--  Applied Data Science (analysis → insight → system)
--  Applied ML in Real World Scenarios 
+- Natural Language Processing and Model Calibration
+- Retrieval-Augmented Generation (RAG) Systems
+- Applied Data Science for Real-World Decision Making
+- Computer Vision and Object Detection
 
 ---
 
-## 📊 GitHub Metrics
+## Areas of Interest
 
-### 📈 Activity Graph
+- Natural Language Processing
+- Data Science
+- MLOps
+- AI Research
+- Knowledge Systems
+- Customer Analysis
+
+---
+
+## GitHub Metrics
+
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ff"/>
 </p>
 
----
-
-### ⚡ Stats + Languages
-<p align="center">
-  <!-- Fallback badges (shields.io) used while github-readme-stats is down -->
-  <img src="https://img.shields.io/github/stars/auraflaa/auraflaa?style=for-the-badge&color=2b2f3a" alt="Stars" />
-  <img src="https://img.shields.io/github/forks/auraflaa/auraflaa?style=for-the-badge&color=2b2f3a" alt="Forks" />
-  <img src="https://img.shields.io/github/languages/top/auraflaa/auraflaa?style=for-the-badge&color=blue" alt="Top language" />
-  <img src="https://img.shields.io/github/languages/count/auraflaa/auraflaa?style=for-the-badge&color=informational" alt="Languages count" />
-</p>
-
----
-
-### 🔥 Streak
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=auraflaa&theme=tokyonight&hide_border=true"/>
 </p>
 
 ---
 
-## ⚡ Languages, Tools and Technologies
+## Languages, Tools and Technologies
 
 <table>
 <tr>
@@ -142,20 +134,5 @@ and systems into understanding.
 
 ---
 
-## 🚀 Featured Work
-
-- 🔍 RAG Pipeline (LLM + Retrieval + Reranking)
-- 📊 Olist Customer Satisfaction Analysis
-- 🧠 NLP Research (in progress)
-
----
-
-## ✍️ Dev Philosophy
-
-> Build systems, not just projects.  
-> Measure, break, refine — repeat.
-
----
-
-## 📜 Random Dev Quote
+## 📜 Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
