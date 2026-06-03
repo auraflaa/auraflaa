@@ -14,15 +14,20 @@
   <img src="https://media.tenor.com/R_ND1Icyt7QAAAAi/chibi-anime-boy.gif" width="180"/>
 </p>
 
+
 # About Me
 
-BTech Computer Science student at RV University.
+BTech: CS @ RV University.  
 
-Interested in building intelligent systems that combine data, machine learning, and large language models to solve real-world problems.
+Working on data, ML, and LLM systems.  
+Mostly `building`, occasionally breaking things.  
 
-Currently focused on NLP, Retrieval-Augmented Generation (RAG), Machine Learning Systems, and Applied Data Science.
+I believe in **Research + Application**.  
+Research without *application* is thought without action,  
+application without *research* is action without direction.  
 
-My approach is simple: understand the theory deeply, validate it experimentally, and engineer solutions that can operate in production environments.
+Trying to bridge both — turning ideas into systems,  
+and systems into understanding.
 
 ---
 
