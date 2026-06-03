@@ -50,15 +50,16 @@ and systems into understanding.
 
 ### ⚡ Stats + Languages
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=auraflaa&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=auraflaa&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
+  <!-- cache-bust param added to force GitHub image proxy to refresh -->
+  <img src="https://github-readme-stats.vercel.app/api?username=auraflaa&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&v=20260603" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=auraflaa&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&v=20260603" alt="Top languages" />
 </p>
 
 ---
 
 ### 🔥 Streak
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=auraflaa&theme=tokyonight&hide_border=true"/>
+  <img src="https://streak-stats.demolab.com?user=auraflaa&theme=tokyonight&hide_border=true&v=20260603"/>
 </p>
 
 ---
