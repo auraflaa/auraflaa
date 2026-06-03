@@ -50,14 +50,7 @@ and systems into understanding.
 
 ### ⚡ Stats + Languages
 <p align="center">
-  <!-- github-readme-stats widgets temporarily disabled because the service is returning 503 Service Unavailable.
-       Original dynamic widgets are kept here (commented) so they can be restored once the service is healthy.
-
-  <img src="https://github-readme-stats.vercel.app/api?username=auraflaa&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=auraflaa&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
-  -->
-
-  <!-- Fallback badges (shields.io) while github-readme-stats is down -->
+  <!-- Fallback badges (shields.io) used while github-readme-stats is down -->
   <img src="https://img.shields.io/github/stars/auraflaa/auraflaa?style=for-the-badge&color=2b2f3a" alt="Stars" />
   <img src="https://img.shields.io/github/forks/auraflaa/auraflaa?style=for-the-badge&color=2b2f3a" alt="Forks" />
   <img src="https://img.shields.io/github/languages/top/auraflaa/auraflaa?style=for-the-badge&color=blue" alt="Top language" />
@@ -68,7 +61,7 @@ and systems into understanding.
 
 ### 🔥 Streak
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=auraflaa&theme=tokyonight&hide_border=true&v=20260603"/>
+  <img src="https://streak-stats.demolab.com?user=auraflaa&theme=tokyonight&hide_border=true"/>
 </p>
 
 ---
