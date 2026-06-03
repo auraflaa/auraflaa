@@ -43,15 +43,15 @@ and systems into understanding.
 
 ### 📈 Activity Graph
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ffffff"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ff"/>
 </p>
 
 ---
 
 ### ⚡ Stats + Languages
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=auraflaa&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=auraflaa&layout=compact&theme=tokyonight&hide_border=true"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=auraflaa&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=auraflaa&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
 </p>
 
 ---
