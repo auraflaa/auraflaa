@@ -42,7 +42,7 @@ My approach is simple: understand the theory deeply, validate it experimentally,
 - MLOps
 - AI Research
 - Knowledge Systems
-- Customer Analysis
+- Customer & Behaviour Analysis
 
 ---
 
