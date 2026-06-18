@@ -10,11 +10,6 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://media.tenor.com/R_ND1Icyt7QAAAAi/chibi-anime-boy.gif" width="180"/>
-</p>
-
-
 # About Me
 
 BTech: CS @ RV University.  
