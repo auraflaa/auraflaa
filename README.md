@@ -10,6 +10,10 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://media.tenor.com/R_ND1Icyt7QAAAAi/chibi-anime-boy.gif" width="180"/>
+</p>
+
 # About Me
 
 BTech: CS @ RV University.  
@@ -54,10 +58,6 @@ and systems into understanding.
 
 <p align="center">
   <img src="https://github-readme-stats.shion.dev/api?username=auraflaa&theme=dark&hide_border=false&include_all_commits=false&count_private=false"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=auraflaa&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact"/>
 </p>
 
 ---
