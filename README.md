@@ -53,7 +53,7 @@ and systems into understanding.
 ## GitHub Metrics
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ff[...]
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ff"/>
 </p>
 
 <p align="center">
