@@ -53,11 +53,12 @@ and systems into understanding.
 ## GitHub Metrics
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ff"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ff[...]
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=auraflaa&theme=dark&hide_border=false&include_all_commits=false&count_private=false"/>
+  <img src="https://camo.githubusercontent.com/591f0b180c095b51872bf0db1750988ab4e319079b9d4e6c3388123cb4d52bee/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d61757261666c616126746865
+6d653d7261646963616c"/>
 </p>
 
 ---
