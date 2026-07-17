@@ -56,9 +56,6 @@ and systems into understanding.
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ff"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=auraflaa&theme=dark&hide_border=false&include_all_commits=false&count_private=false"/>
-</p>
 
 ---
 
