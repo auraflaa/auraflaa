@@ -52,9 +52,21 @@ and systems into understanding.
 
 ## GitHub Metrics
 
+<!-- PROFILE-GRAPHS:START — self-hosted. Generated daily by .github/workflows/profile-graphs.yml. Edit scripts/generate.py, not the SVGs. -->
+
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=auraflaa&bg_color=0d1117&hide_border=true&line=5BCDEC&point=false&area=true&area_color=5BCDEC&color=ffffff&title_color=ff"/>
+  <img src="./assets/activity.svg" alt="Contribution heatmap and 30-day pulse — self-hosted, updated daily by CI"/>
 </p>
+
+<p align="center">
+  <img src="./assets/stats.svg" alt="Profile stats — self-hosted, updated daily by CI"/>
+</p>
+
+<p align="center">
+  <img src="./assets/languages.svg" alt="Top languages by bytes — self-hosted, updated daily by CI"/>
+</p>
+
+<!-- PROFILE-GRAPHS:END -->
 
 
 ---
@@ -135,5 +147,8 @@ and systems into understanding.
 
 ---
 
-## 📜 Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+## 📜 Build Principle
+
+<p align="center">
+  <img src="./assets/principle.svg" alt="Daily build principle — self-hosted, rotated by CI"/>
+</p>

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Top languages">
+<title>Top languages</title>
+<rect width="1200" height="300" rx="10" fill="#0d1117"/>
+<text x="28" y="36" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="17" font-weight="700" fill="#ffffff">Language fingerprint <tspan fill="#8b949e" font-weight="400">· by bytes</tspan></text><text x="28" y="120" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="14" fill="#8b949e">No language data yet — push some code and CI will fill this in.</text></svg>

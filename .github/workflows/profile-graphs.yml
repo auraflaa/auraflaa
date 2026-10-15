@@ -1,0 +1,53 @@
+name: Profile Graphs
+
+# Self-hosted profile metrics. No third-party image services:
+# Python (stdlib only) queries the GitHub API and renders SVGs into
+# ./assets/, which the README embeds directly.
+
+on:
+  schedule:
+    - cron: "17 0 * * *" # daily 00:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile-graphs.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-graphs
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+        run: python scripts/generate.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/languages.svg assets/activity.svg assets/principle.svg assets/meta.json
+          if git diff --cached --quiet; then
+            echo "No changes — graphs already up to date."
+          else
+            git commit -m "chore: refresh profile graphs [skip ci]"
+            git push
+          fi
