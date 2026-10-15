@@ -1,9 +1,9 @@
 {
   "login": "auraflaa",
-  "updated": "2026-10-15 08:13 UTC",
-  "total_contributions": 0,
-  "current_streak": 0,
-  "longest_streak": 0,
+  "updated": "2026-10-15 08:15 UTC",
+  "total_contributions": 1332,
+  "current_streak": 7,
+  "longest_streak": 8,
   "includes_private": false,
-  "api_error": "no token - placeholder until CI runs with PROFILE_PAT/GITHUB_TOKEN"
+  "api_error": ""
 }
