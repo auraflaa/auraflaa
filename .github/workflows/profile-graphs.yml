@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/stats.svg assets/streak.svg assets/activity.svg assets/quote.svg assets/meta.json
+          git add assets/streak.svg assets/activity.svg assets/quote.svg assets/meta.json
           if git diff --cached --quiet; then
             echo "No changes — graphs already up to date."
           else

@@ -5,8 +5,6 @@ Self-hosted GitHub profile graphs — no third-party image services.
 Renders the profile's cards into ./assets/ with one consistent theme
 (bg #0d1117, hairline #21262d, white text, accent #5BCDEC):
 
-  assets/stats.svg    - stat rows (stars / commits / PRs / issues /
-                        contributed-to) + house grade ring
   assets/streak.svg   - total / current-streak / longest-streak card
   assets/activity.svg - minimal contribution area graph
   assets/quote.svg    - daily dev quote card
@@ -44,7 +42,6 @@ FONT = "system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif"
 SERIF = "Georgia,'Times New Roman',serif"
 
 RING_TRACK = "#2d333b"
-RING_STATS = "#e6edf3"
 FIRE = "#FB8C00"
 FIRE_SOFT = "#FFD54F"
 
@@ -65,23 +62,7 @@ GRAPHQL_QUERY = """
 query($login: String!) {
   user(login: $login) {
     login
-    name
-    followers { totalCount }
-    repositories(first: 100, ownerAffiliations: OWNER) {
-      totalCount
-      nodes { stargazerCount }
-    }
-    repositoriesContributedTo(
-      first: 1
-      contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]
-    ) {
-      totalCount
-    }
     contributionsCollection {
-      totalCommitContributions
-      totalIssueContributions
-      totalPullRequestContributions
-      totalPullRequestReviewContributions
       contributionCalendar {
         totalContributions
         weeks {
@@ -102,14 +83,6 @@ def fetch_profile(login: str, token: str | None) -> dict:
     """Return normalized profile dict. Never raises — fallback on error."""
     fallback = {
         "login": login,
-        "name": "",
-        "followers": 0,
-        "stars": 0,
-        "commits": 0,
-        "prs": 0,
-        "issues": 0,
-        "reviews": 0,
-        "contributed_to": 0,
         "total": 0,
         "days": [],
         "error": "",
@@ -143,19 +116,8 @@ def fetch_profile(login: str, token: str | None) -> dict:
         days: list[dict] = []
         for w in cc["contributionCalendar"]["weeks"]:
             days.extend(w.get("contributionDays", []))
-        repos = user["repositories"]["nodes"]
         return {
             "login": user["login"],
-            "name": user.get("name") or user["login"],
-            "followers": user["followers"]["totalCount"],
-            # Stars across the 100 most-starred owned repos (API page cap).
-            "stars": sum((r.get("stargazerCount") or 0) for r in repos),
-            "commits": cc["totalCommitContributions"],
-            "prs": cc["totalPullRequestContributions"],
-            "issues": cc["totalIssueContributions"],
-            "reviews": cc["totalPullRequestReviewContributions"],
-            # "Contributed to (last year)": repos recently contributed to.
-            "contributed_to": user["repositoriesContributedTo"]["totalCount"],
             "total": cc["contributionCalendar"]["totalContributions"],
             "days": days,
             "error": "",
@@ -183,52 +145,6 @@ def fmt_mdy(d: dt.date) -> str:
 
 def _day(d: dict) -> dt.date:
     return dt.date.fromisoformat(d["date"][:10])
-
-
-# ---------------------------------------------------------------- grade
-# House grade: transparent heuristic inspired by the well-known exponential
-# survival-function approach (each metric normalized against a typical median,
-# then combined as a weighted average). Ranks: S, A+, A, A-, B+, B, B-, C+,
-# C, C-. This is our own formula, not affiliated with any ranking service.
-
-def _survival(x: int, median: float) -> float:
-    return 1.0 - math.exp(-x / median) if median > 0 else 0.0
-
-
-GRADE_INPUTS = (
-    ("commits", 250.0, 2.0),
-    ("prs", 12.0, 3.0),
-    ("issues", 8.0, 1.0),
-    ("reviews", 3.0, 1.0),
-    ("stars", 10.0, 4.0),
-    ("followers", 8.0, 1.0),
-)
-
-GRADE_BANDS = (
-    (85.0, "S"),
-    (75.0, "A+"),
-    (68.0, "A"),
-    (61.0, "A-"),
-    (54.0, "B+"),
-    (48.0, "B"),
-    (42.0, "B-"),
-    (30.0, "C+"),
-    (22.0, "C"),
-    (14.0, "C-"),
-)
-
-
-def house_grade(p: dict) -> tuple[float, str]:
-    total_w = sum(w for _, _, w in GRADE_INPUTS)
-    score = (
-        100.0
-        * sum(w * _survival(p.get(k, 0), m) for k, m, w in GRADE_INPUTS)
-        / total_w
-    )
-    for bound, grade in GRADE_BANDS:
-        if score >= bound:
-            return score, grade
-    return score, "D"
 
 
 # ---------------------------------------------------------------- streaks
@@ -285,62 +201,6 @@ def span_label(span: tuple[int, dt.date | None, dt.date | None]) -> str:
     if start == end:
         return fmt_md(start)
     return f"{fmt_md(start)} - {fmt_md(end)}"
-
-
-# ----------------------------------------------------------------- stats
-
-def render_stats(p: dict) -> str:
-    W, H = 1200, 300
-    title = f"{p['name'] or p['login']}'s GitHub Stats"
-    rows = [
-        ("Total Stars Earned:", fmt_int(p["stars"])),
-        ("Total Commits (last year):", fmt_int(p["commits"])),
-        ("Total PRs:", fmt_int(p["prs"])),
-        ("Total Issues:", fmt_int(p["issues"])),
-        ("Contributed to (last year):", fmt_int(p["contributed_to"])),
-    ]
-    score, grade = house_grade(p)
-
-    s = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
-        f'viewBox="0 0 {W} {H}" role="img" aria-label="{esc(title)}">\n'
-        f"<title>{esc(title)}</title>\n"
-        f'<rect width="{W}" height="{H}" rx="10" fill="{BG}" stroke="{HAIRLINE}"/>\n'
-        f'<text x="48" y="66" font-family="{FONT}" font-size="26" '
-        f'font-weight="700" fill="{TEXT}">{esc(title)}</text>\n'
-    ]
-    y = 118
-    for label, value in rows:
-        s.append(
-            f'<text x="48" y="{y}" font-family="{FONT}" font-size="19" '
-            f'fill="{MUTED}">{esc(label)}</text>\n'
-            f'<text x="760" y="{y}" text-anchor="end" font-family="{FONT}" '
-            f'font-size="19" font-weight="600" fill="{TEXT}">{esc(value)}</text>\n'
-        )
-        y += 36
-    if p.get("error"):
-        s.append(
-            f'<text x="48" y="{H - 18}" font-family="{FONT}" font-size="12" '
-            f'fill="{MUTED}">live data pending ({esc(p["error"])})</text>\n'
-        )
-
-    # Grade ring.
-    cx, cy, r, sw = 990, 150, 78, 14
-    circ = 2 * math.pi * r
-    arc = max(score, 2.0) / 100.0 * circ
-    s.append(
-        f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" '
-        f'stroke="{RING_TRACK}" stroke-width="{sw}"/>\n'
-        f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{RING_STATS}" '
-        f'stroke-width="{sw}" stroke-linecap="round" '
-        f'stroke-dasharray="{arc:.1f} {circ:.1f}" '
-        f'transform="rotate(-90 {cx} {cy})">'
-        f"<title>House grade {esc(grade)} ({score:.0f}/100)</title></circle>\n"
-        f'<text x="{cx}" y="{cy + 15}" text-anchor="middle" font-family="{FONT}" '
-        f'font-size="42" font-weight="700" fill="{TEXT}">{esc(grade)}</text>\n'
-        "</svg>"
-    )
-    return "".join(s)
 
 
 # ---------------------------------------------------------------- streak
@@ -533,10 +393,8 @@ def main() -> int:
     os.makedirs(ASSETS, exist_ok=True)
     p = fetch_profile(login, token)
     spans = streak_spans(p["days"])
-    _, grade = house_grade(p)
 
     outputs = {
-        "stats.svg": render_stats(p),
         "streak.svg": render_streak(p, spans),
         "activity.svg": render_activity(p, login),
         "quote.svg": render_quote(),
@@ -544,7 +402,7 @@ def main() -> int:
     for name, svg in outputs.items():
         with open(os.path.join(ASSETS, name), "w", encoding="utf-8", newline="\n") as f:
             f.write(svg)
-    for legacy in ("languages.svg", "principle.svg"):
+    for legacy in ("stats.svg", "languages.svg", "principle.svg"):
         path = os.path.join(ASSETS, legacy)
         if os.path.exists(path):
             os.remove(path)
@@ -554,9 +412,6 @@ def main() -> int:
                 "login": login,
                 "updated": updated_stamp(),
                 "total_contributions": p["total"],
-                "stars": p["stars"],
-                "commits": p["commits"],
-                "grade": grade,
                 "current_streak": spans["current"][0],
                 "longest_streak": spans["longest"][0],
                 "includes_private": includes_private,
@@ -565,10 +420,7 @@ def main() -> int:
             f,
             indent=2,
         )
-    print(
-        f"generated {len(outputs)} SVGs for @{login} "
-        f"(grade={grade}, api_error={p['error']!r})"
-    )
+    print(f"generated {len(outputs)} SVGs for @{login} (api_error={p['error']!r})")
     return 0
 
 
