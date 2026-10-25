@@ -2,7 +2,7 @@
 <title>Dev Quote</title>
 <rect width="1200" height="200" rx="10" fill="#0d1117" stroke="#21262d"/>
 <rect x="28" y="28" width="4" height="144" rx="2" fill="#5BCDEC"/>
-<text x="52" y="58" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" letter-spacing="3" fill="#8b949e">DEV QUOTE · SATURDAY</text>
-<text x="52" y="112" font-family="Georgia,'Times New Roman',serif" font-size="24" font-style="italic" fill="#ffffff">“Fix the cause, not the symptom.”</text>
-<text x="1148" y="160" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#5BCDEC">— Steve Maguire</text>
+<text x="52" y="58" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" letter-spacing="3" fill="#8b949e">DEV QUOTE · SUNDAY</text>
+<text x="52" y="112" font-family="Georgia,'Times New Roman',serif" font-size="24" font-style="italic" fill="#ffffff">“Testing leads to failure, and failure leads to understanding.”</text>
+<text x="1148" y="160" text-anchor="end" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="15" fill="#5BCDEC">— Burt Rutan</text>
 </svg>
