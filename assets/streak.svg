@@ -3,7 +3,7 @@
 <rect width="1200" height="320" rx="10" fill="#0d1117" stroke="#21262d"/>
 <line x1="400" y1="44" x2="400" y2="276" stroke="#21262d"/>
 <line x1="800" y1="44" x2="800" y2="276" stroke="#21262d"/>
-<text x="200" y="128" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="700" fill="#ffffff">1,468</text>
+<text x="200" y="128" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="700" fill="#ffffff">1,467</text>
 <text x="200" y="176" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="21" fill="#ffffff">Total Contributions</text>
 <text x="200" y="214" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#8b949e">Oct 26, 2025 - Present</text>
 <text x="1000" y="128" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="58" font-weight="700" fill="#ffffff">9</text>
@@ -13,7 +13,7 @@
 <circle cx="600" cy="118" r="62" fill="none" stroke="#FB8C00" stroke-width="11" stroke-linecap="round" stroke-dasharray="23.4 389.6" transform="rotate(-90 600 118)"/>
 <path d="M 600 26 C 587 43 585 51 585 57 A 15 15 0 0 0 615 57 C 615 51 613 43 600 26 Z" fill="#FB8C00"/>
 <path d="M 600 42 C 594 52 593 56 593 59 A 7 7 0 0 0 607 59 C 607 56 606 52 600 42 Z" fill="#FFD54F"/>
-<text x="600" y="134" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="44" font-weight="700" fill="#ffffff">1</text>
+<text x="600" y="134" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="44" font-weight="700" fill="#ffffff">0</text>
 <text x="600" y="238" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#FB8C00">Current Streak</text>
-<text x="600" y="268" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#8b949e">Oct 24</text>
+<text x="600" y="268" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="#8b949e">-</text>
 </svg>
