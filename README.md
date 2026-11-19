@@ -5,7 +5,7 @@
   <a href="https://stackoverflow.com/users/42500060">
     <img src="https://img.shields.io/badge/-Stackoverflow-FE7A16?logo=stack-overflow&logoColor=white"/>
   </a>
-  <a href="mailto:priyangshumukherjee07@gmail.com">
+  <a href="mailto:priyangsh.tech@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white"/>
   </a>
 </p>
